@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="400px" height="400px" style="border: 1px solid black"></canvas>
+	<script type="text/javascript">
+		const canvas = document.getElementById("myCanvas");
+		const context = canvas.getContext("2d");
+
+		class Blob {
+
+			constructor(color, size) {
+				this.x = Math.random() * canvas.width;
+				this.y = Math.random() * canvas.height;
+				this.color = color;
+				this.size = size;
+				this.xChange = 1;
+				this.yChange = 1;
+			}
+
+			move() {
+
+				if (this.x >= canvas.width || this.x <= 0) {
+					this.xChange *= -1;
+				}
+
+				if (this.y >= canvas.height || this.y <= 0) {
+					this.yChange *= -1;
+				}
+
+				this.x += this.xChange;
+				this.y += this.yChange;
+
+			}
+
+			draw() {
+
+				context.beginPath();
+				context.arc(this.x, this.y, this.size, 0, 2*Math.PI);
+				context.fillStyle = this.color;
+				context.fill();
+				context.stroke();
+
+			}
+		}
+
+		const newBlob = new Blob("black", 20);
+		newBlob.draw();
+
+
+
+	</script>
+</body>
+</html>

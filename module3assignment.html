@@ -1,34 +1,100 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>M-2 Assignment</title>
-    </head>
-    
-    <body>
-        <h1>Food Items with their Delicious descriptions</h1>
-        <div class="container col-lg-4 col-md-6">
-            <section class="">
-                <p class="food-title" id="p1">Chicken Biryani</p>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lacinia odio, quis condimentum sem. Praesent consectetur, felis at cursus malesuada, orci nulla feugiat arcu, at fringilla mauris quam sit amet turpis. Morbi ante urna, ornare ut mi eget, laoreet vestibulum lorem. In congue erat eget sapien efficitur faucibus. Pellentesque lacinia dolor ullamcorper leo feugiat aliquet.</p>
-            </section>
-        </div>
-        
-        <div class="container col-lg-4 col-md-6">
-            <section class="">
-                <p class="food-title" id="p2">Chole Bhature</p>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lacinia odio, quis condimentum sem. Praesent consectetur, felis at cursus malesuada, orci nulla feugiat arcu, at fringilla mauris quam sit amet turpis. Morbi ante urna, ornare ut mi eget, laoreet vestibulum lorem. In congue erat eget sapien efficitur faucibus. Pellentesque lacinia dolor ullamcorper leo feugiat aliquet.</p>
-            </section>
-        </div>
-        
-        <div class="container col-lg-4 col-md-12">
-            <section class="">
-                <p class="food-title" id="p3">Daal Baati Choorma</p>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lacinia odio, quis condimentum sem. Praesent consectetur, felis at cursus malesuada, orci nulla feugiat arcu, at fringilla mauris quam sit amet turpis. Morbi ante urna, ornare ut mi eget, laoreet vestibulum lorem. In congue erat eget sapien efficitur faucibus. Pellentesque lacinia dolor ullamcorper leo feugiat aliquet.</p>
-            </section>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KFP Café</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="pull-left visible-md visible-lg visible-sm">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="#"><h1>KFP Café</h1></a>
+            <p>
+              <img src="images/p-certified.jpg" alt="Kosher certification">
+              <span>Pikachu Certified</span>
+            </p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
 
-    </body>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:234-5436-2671">
+                <span>234-5436-2671</span></a><div>* We Do Not Deliver</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:234-5436-2671">
+    <span class="glyphicon glyphicon-earphone"></span>
+    234-5436-2671
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+  <div id="main-content" class="container">
+    <br>
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+          <div id="menu-tile">
+          <h2 class="tile-title">Sandwiches</h2>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          End of sandwiches section. Back to <a href="#header-nav">top</a>.</span>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div id="specials-tile">
+          <h2 class="tile-title">Drinks</h2>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          End of drinks section. Back to <a href="#header-nav">top</a>.</span></div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+          <div id="map-tile">
+            <h2 class="tile-title">Fish</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>End of beef section. Back to <a href="#header-nav">top</a>.</span>
+          </div>
+      </div>
+    </div><!-- End of #home-tiles -->
+  </div><!-- End of #main-content -->
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
